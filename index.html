@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="page">
+      <section class="counter-card" aria-labelledby="page-title">
+        <div class="icon" aria-hidden="true">↕</div>
+        <p class="eyebrow">SIMPLE TOOL</p>
+        <h1 id="page-title">Counter App</h1>
+        <p class="subtitle">A little progress, one step at a time.</p>
+
+        <div class="counter-display" aria-live="polite" aria-atomic="true">
+          <span id="count">0</span>
+        </div>
+        <p id="status" class="status">Ready when you are</p>
+
+        <div class="controls" aria-label="Counter controls">
+          <button
+            id="decrease"
+            class="btn btn-secondary"
+            type="button"
+            aria-label="Decrease counter by one"
+          >
+            <span aria-hidden="true">-</span><span>Decrease</span>
+          </button>
+          <button
+            id="increase"
+            class="btn btn-primary"
+            type="button"
+            aria-label="Increase counter by one"
+          >
+            <span aria-hidden="true">+</span><span>Increase</span>
+          </button>
+        </div>
+        <button id="reset" class="reset-btn" type="button">
+          <span>Reset counter</span>
+        </button>
+        <p class="hint">The counter can't go below zero.</p>
+      </section>
+      <footer>Built with HTML, CSS &amp; JavaScript</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
